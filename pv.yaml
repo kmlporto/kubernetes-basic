@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-1
+spec:
+  capacity:
+    sotrage: 10Gi
+  accesModes:
+    - ReadWriteOnce
+  gcePersistenceDisk:
+    pdName: my-data-disk
